@@ -1,0 +1,50 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../paper-button/paper-button.html">
+<link rel="import" href="../iron-icon/icon-icon.html">
+<link rel="import" href="../cork-icons/cork-icons.html">
+
+<dom-module id="cork-cancel-button">
+  <template>
+    <style>
+      :host {
+        display: inline;
+      }
+
+      paper-button {
+        color: var(--default-primary-color);
+        font-size: 12px;
+        font-style: italic;
+        padding: 0;
+      }
+
+      iron-icon {
+        display: inline-block;
+        margin-right: -2px;
+        margin-top: -1px;
+      }
+    </style>
+
+    <paper-button>
+      <iron-icon clear-icon icon="cork:close"></iron-icon>
+      <span style="vertical-align: middle">&nbsp;[[label]]</span>
+    </paper-button>
+
+  </template>
+
+  <script>
+
+    class CorkCancelButton extends Polymer.Element {
+      static get is() { return 'cork-cancel-button'; }
+      static get properties() {
+        return {
+          label: {
+            type: String,
+            value: ''
+          }
+        };
+      }
+    }
+
+    window.customElements.define(CorkCancelButton.is, CorkCancelButton);
+  </script>
+</dom-module>
