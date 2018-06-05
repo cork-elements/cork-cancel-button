@@ -1,0 +1,25 @@
+{
+  "name": "@ucd-lib/cork-cancel-button",
+  "version": "1.0.0",
+  "description": "Cancel button with standard icon and label style",
+  "main": "cork-cancel-button.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cork-elements/cork-cancel-button.git"
+  },
+  "author": "jrmerz@ucdavis.edu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cork-elements/cork-cancel-button/issues"
+  },
+  "homepage": "https://github.com/cork-elements/cork-cancel-button#readme",
+  "dependencies": {
+    "@polymer/iron-icon": "^3.0.0-pre.19",
+    "@polymer/paper-button": "^3.0.0-pre.19",
+    "@polymer/polymer": "^3.0.2",
+    "@ucd-lib/cork-icons": "^1.0.0"
+  }
+}
